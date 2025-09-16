@@ -20,5 +20,9 @@
     "llm",
     "gemini",
     "typescript"
-  ]
+  ],
+  "dependencies": {
+    "vitest": "^3.2.4",
+    "zod": "^4.1.8"
+  }
 }
