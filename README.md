@@ -1,4 +1,4 @@
-# LLM-only Content Moderation (TypeScript)
+# Content Moderation (TypeScript)
 
 Single-stage moderation using **Gemini**.  
 No rules, no local models, no rate limiting. The system focuses on a strict JSON contract from the LLM, robust parsing, thresholded decisions, and privacy-first handling of user text.
