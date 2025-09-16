@@ -22,6 +22,8 @@
     "typescript"
   ],
   "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "dotenv": "^17.2.2",
     "vitest": "^3.2.4",
     "zod": "^4.1.8"
   }
