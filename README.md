@@ -109,7 +109,7 @@ Uncertainty handling:
   "allowed": true,
   "risk": 0.00,
   "labels": [],
-  "scores": { "hate":0, "harassment":0, "...":"..." },
+  "scores": { "hate":0, "harassment":0, "...":0 },
   "uncertainty": 0.00,
   "explanations": []
 }
@@ -126,8 +126,18 @@ Uncertainty handling:
 
 Two modes:
 
-* Single text: `moderate "<text>"`
-* Batch JSONL: `moderate --file path/to/fixtures.jsonl` (one object per line with a `text` field)
+**Single text (cmd.exe)**
+
+```cmd
+npm run cli -- "I hate you"
+```
+
+**Batch JSONL (cmd.exe)**
+
+```cmd
+:: each line: {"text":"...","lang":"en"}
+npm run cli -- --file data\fixtures\dev.jsonl --json
+```
 
 Exit codes: `0 = allow`, `2 = review`, `3 = block`.
 
