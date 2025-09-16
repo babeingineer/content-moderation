@@ -14,7 +14,11 @@
     "format": "prettier --write .",
     "test": "vitest run",
     "dev:cli": "tsx watch src/cli/moderate.ts",
-    "dev:server": "tsx watch src/server/main.ts"
+    "dev:server": "tsx watch src/server/main.ts",
+    "cli": "npx tsx src/cli/moderate.ts"
+  },
+  "bin": {
+    "moderate": "dist/cli/moderate.js"
   },
   "keywords": [
     "moderation",
@@ -24,6 +28,7 @@
   ],
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
+    "commander": "^14.0.1",
     "dotenv": "^17.2.2",
     "express": "^5.1.0",
     "vitest": "^3.2.4",
